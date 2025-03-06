@@ -2,7 +2,7 @@ from openai import OpenAI
 import re
 
 client = OpenAI(
-    # Update api_key as found in https://console.llamaapi.com/ under 'Api Keys'
+    # Update api_key as found in https://console.llamaapi.com/en/dashboard/api-token
     api_key='',
     base_url='https://api.llama-api.com'
 )
@@ -29,7 +29,7 @@ def explanation_api_call(prompt, filename=None, logs=None, experiment_repeat=Non
     ).choices[0].message.content
     if filename and logs != None and experiment_repeat != None:
         try:
-            m = open(f'results/paperSubmission/{filename}/explanations/{filename}-{logs}-{experiment_repeat}.md', 'w')
+            m = open(f'results/{filename}/explanations/{filename}-{logs}-{experiment_repeat}.md', 'w')
             m.write(r)
         except:
             print(f"Unexpected error writing explanation {filename} with {logs} logs, run {experiment_repeat}.")
@@ -64,7 +64,7 @@ def judgment_api_call(prompt_to_evaluate,
     ).choices[0].message.content
     if filename and logs != None and experiment_repeat != None:
         try:
-            m = open(f'results/paperSubmission/{filename}/judgments/{filename}-{logs}-{experiment_repeat}.md', 'w')
+            m = open(f'results/{filename}/judgments/{filename}-{logs}-{experiment_repeat}.md', 'w')
             m.write(r)
         except:
             print(f'Unexpected error writing judgment {filename} with {logs} logs, run {experiment_repeat}.')
@@ -153,7 +153,7 @@ if __name__ == '__main__':
         files_to_evaluate = [open(f'{file_directory}/{file_name}-{l}-logs.txt', 'r').read() for l in log_numbers]
         
         # File that contains all obtained scores and average scores
-        f = open(f'results/paperSubmission/{file_name}/{file_name}.txt', 'a')
+        f = open(f'results/{file_name}/{file_name}.txt', 'a')
         
         for i in range(len(log_numbers)):
             # Per input logs amount, an array of the obtained scores is made
@@ -182,7 +182,7 @@ if __name__ == '__main__':
                 except:
                     print(f"Wrong format type in overall score ({file_name}-{log_numbers[i]}-{j})")
                     f.write(f"Wrong format type in overall score ({file_name}-{log_numbers[i]}-{j}) \n")
-                    h = open(f'results/paperSubmission/errorResponses/{file_name}-{log_numbers[i]}-{j}.md', 'w')
+                    h = open(f'results/errorResponses/{file_name}-{log_numbers[i]}-{j}.md', 'w')
                     try:
                         h.write(judgment)
                     except:
