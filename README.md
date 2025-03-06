@@ -5,7 +5,7 @@ This repository contains all relevant data and results as presented in the paper
 ## General information
 In the ``code`` folder, the used algorithms for the data pre-processing and explanation-judgment generation can be found.
 
-The textual representations produced by the ``data.py`` code as used in the ``main.py`` algorithm can be found in the ``data`` folder.
+The textual representations produced by the ``code/data.py`` code as used in the ``code/main.py`` code can be found in the ``data`` folder.
 
 The ``results`` folder is split per experiment as found in [1]. Each experiment folder contains a ``.txt`` file containing an overview of the given scores per amount of input log size. Furthermore, all generated explanations and judgments per process model can be found in the corresponding folders. The name of the files are in the format of ``[experiment]-[log_amount]-[run_number].md``.
 
