@@ -137,7 +137,7 @@ if __name__ == '__main__':
     file_names = ['411', '412', '413', '421', '422']
 
     # Directory in which the files are located
-    file_directory = 'testData'
+    file_directory = 'data'
     
     # Different amount of input logs the process models are based on
     log_numbers = [5, 10, 20, 50, 100, 1000, 10000, 100000, 'complete']
