@@ -3,11 +3,11 @@
 This repository contains all relevant data and results as presented in the paper 'Towards Data-Efficient Large Language Model Explanations for Process Mining', submitted to the [BPM 2025 Conference](https://www.bpm2025seville.org/).
 
 ## General information
-In the <em>code</em> section, the used algorithms for the data pre-processing and explanation-judgment generation can be found.
+In the ``code`` folder, the used algorithms for the data pre-processing and explanation-judgment generation can be found.
 
-The textual representations as used in the main algorithm can be found in the <em>data</em> section.
+The textual representations produced by the ``data.py`` code as used in the ``main.py`` algorithm can be found in the ``data`` folder.
 
-The <em>results</em> section is split per experiment as found in [1]. Each experiment folder contains a .txt file containing an overview of the given scores per amount of input log size. Furthermore, all generated explanations and judgments per process model can be found in the corresponding folders. The name of the files are in the format of <em>[experiment]-[log_amount]-[run_number].md</em>.
+The ``results`` folder is split per experiment as found in [1]. Each experiment folder contains a ``.txt`` file containing an overview of the given scores per amount of input log size. Furthermore, all generated explanations and judgments per process model can be found in the corresponding folders. The name of the files are in the format of ``[experiment]-[log_amount]-[run_number].md``.
 
 ## Running locally
 ### Windows
