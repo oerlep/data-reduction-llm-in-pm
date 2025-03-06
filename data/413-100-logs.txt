@@ -1,0 +1,18 @@
+
+
+Transport -> Transport ( frequency = 37  performance = 62.904 )
+Welding -> Welding ( frequency = 9  performance = 49.436 )
+Painting -> Painting ( frequency = 9  performance = 44.444 )
+Drilling -> Drilling ( frequency = 9  performance = 20.710 )
+Arrival -> Transport ( frequency = 4  performance = 0.000 )
+Arrival -> Arrival ( frequency = 4  performance = 0.000 )
+Welding -> Transport ( frequency = 3  performance = 0.000 )
+Transport -> Welding ( frequency = 3  performance = 0.000 )
+Transport -> Painting ( frequency = 3  performance = 0.000 )
+Transport -> Drilling ( frequency = 3  performance = 0.000 )
+Transport -> Drain ( frequency = 3  performance = 0.000 )
+Painting -> Transport ( frequency = 3  performance = 0.000 )
+Drilling -> Transport ( frequency = 3  performance = 0.000 )
+Drain -> Drain ( frequency = 3  performance = 0.000 )
+
+

@@ -1,0 +1,13 @@
+
+
+Transport -> Transport ( frequency = 7  performance = 26.438 )
+Welding -> Welding ( frequency = 3  performance = 47.032 )
+Painting -> Painting ( frequency = 3  performance = 17.852 )
+Welding -> Transport ( frequency = 1  performance = 0.000 )
+Transport -> Welding ( frequency = 1  performance = 0.000 )
+Transport -> Painting ( frequency = 1  performance = 0.000 )
+Painting -> Transport ( frequency = 1  performance = 0.000 )
+Arrival -> Transport ( frequency = 1  performance = 0.000 )
+Arrival -> Arrival ( frequency = 1  performance = 0.000 )
+
+

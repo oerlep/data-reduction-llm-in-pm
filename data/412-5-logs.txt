@@ -1,0 +1,7 @@
+
+
+Transport -> Transport ( frequency = 2  performance = 40.681 )
+Arrival -> Transport ( frequency = 1  performance = 0.000 )
+Arrival -> Arrival ( frequency = 1  performance = 0.000 )
+
+
